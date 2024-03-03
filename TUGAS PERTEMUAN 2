@@ -21,7 +21,7 @@ Penjelasan:
 
 ### Spesifikasi CPU
 
-![alt text]()
+![alt text](https://github.com/r4mmar/Sys0P24-3123521004/blob/main/CPU.png)
 #### _Section Processor_
 • Name : adalah informasi tentang nama lengkap dari prosessor yaitu “Intel Celeron N4000”,
 • Code Name : adalah informasi tentang kode prosessor yaitu “Gemini Lake”,
@@ -45,7 +45,7 @@ perangkat lain,
 
 ### Spesifikasi Mainboard
 
-![alt text]()
+![alt text](https://github.com/r4mmar/Sys0P24-3123521004/blob/main/Mainboard.png)
 #### _Section Motherboard_
 • Manufacturer : adalah informasi produsen dari motherboard yaitu “HP”,
 • Model : adalah informasi tentang model motherboard yaitu “84B6”,
@@ -60,7 +60,7 @@ Bridge”,
 
 ### Spesifikasi Memory
 
-![alt text]()
+![alt text](https://github.com/r4mmar/Sys0P24-3123521004/blob/main/Memory.png)
 #### _Section General_
 • Type : adalah informasi jenis memori yang digunakan yaitu “DDR4”,
 • Size : adalah informasi jumlah memori kapasitas memori yaitu “4 GBytes”
@@ -70,8 +70,7 @@ Bridge”,
 
 ### Spesifikasi SPD
 
-![alt text]() 
-
+![alt text](https://github.com/r4mmar/Sys0P24-3123521004/blob/main/SPD.png) 
 #### _Section Memory Slot Selection_
 • Memory Slot : adalah informasi yang menunjukan memori yang terpasang pada komputer, hanya 
 ada satu memori yang terpasang,
@@ -102,8 +101,7 @@ memori,
 
 ### Spesifikasi Graphics
 
-![alt text]() 
-
+![alt text](https://github.com/r4mmar/Sys0P24-3123521004/blob/main/Graphics.png) 
 • Name : adalah informasi tentang nama dari GPU yaitu “Intel UHD Graphics 600”,
 • Board Manuf : adalah informasi tentang nama pabrikan motherboard,
 • Revision : adalah informasi revisi CPU
