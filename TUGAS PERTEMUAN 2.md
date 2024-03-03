@@ -102,6 +102,7 @@ memori,
 ### Spesifikasi Graphics
 
 ![alt text](https://github.com/r4mmar/Sys0P24-3123521004/blob/main/Graphics.png) 
+#### _Section Graphics_
 • Name : adalah informasi tentang nama dari GPU yaitu “Intel UHD Graphics 600”,
 • Board Manuf : adalah informasi tentang nama pabrikan motherboard,
 • Revision : adalah informasi revisi CPU
