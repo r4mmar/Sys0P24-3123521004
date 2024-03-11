@@ -1,5 +1,5 @@
 OPERATING SYSTEM
-![alt text]()
+![alt text](https://github.com/r4mmar/Sys0P24-3123521004/blob/main/operating%20system.jpg)
 >>Introduction to Operating System
 
 >Introduction
