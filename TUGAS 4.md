@@ -211,10 +211,15 @@ proses1 dan proses2.
 ## LATIHAN:
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output   ke file baru.
+![Screenshot (678)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/fdca7762-9b47-4ac2-93a8-7b5f6503b097)
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
+![Screenshot (679)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/41e527eb-8319-4a6c-9ccc-a5a0dea41b2f)
 3. Urutkan file baru dengan cara membelokkan standard input.
+![Screenshot (680)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/d4e2e47b-5587-4ab0-9cc1-e79198059784)
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
+![Screenshot (681)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/1bd60e9e-feeb-4fd7-89b3-8446e7f2c579)
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
+![Screenshot (682)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/06ddd1ad-3989-4e7d-a856-2c35c7115689)
 6. Urutkan kalimat berikut :
    ```
    Jakarta
@@ -225,8 +230,7 @@ proses1 dan proses2.
    Lampung
    ```
   Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
-  
-
+  ![Screenshot (684)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/52882310-c8ef-4e8b-9cde-702ff70038f4)
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
 8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
@@ -241,6 +245,9 @@ proses1 dan proses2.
     $ cat hello.txt | sort | uniq
     $ cat hello.txt | grep “dog” | grep –v “cat”
    ```
+![Screenshot (683)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/b7b6a51e-dca3-436f-b37e-4719a3b91a4b)
+
+
 ## LAPORAN RESMI:
 
 1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan    tampilannya.
