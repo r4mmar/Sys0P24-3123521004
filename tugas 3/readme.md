@@ -1,4 +1,6 @@
 OPERATING SYSTEM
+![Mind mapping](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/37726223-6d17-4ce2-851e-d3e67604ed88)
+
 >>Introduction to Operating System
 
 >Introduction
