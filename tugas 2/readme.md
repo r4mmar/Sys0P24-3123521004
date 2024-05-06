@@ -15,3 +15,5 @@ proses booting komputer adalah proses perjalanan penyalaan komputer awal sampai 
 - System Process dan User Space: System processes adalah program-program yang berjalan di latar belakang untuk mengelola sistem operasi, seperti penjadwalan tugas dan manajemen memori. User space adalah lingkungan di mana aplikasi pengguna berjalan, seperti aplikasi pengolah kata atau peramban web.
 
 - Komputer Siap Digunakan: Setelah proses booting selesai dan sistem operasi berhasil dimuat, komputer siap untuk digunakan oleh pengguna. Antarmuka pengguna akan muncul, dan pengguna dapat mulai menjalankan program-program dan tugas-tugas yang diinginkan. 
+
+# IDENTIFIKASI KOMPUTER ANDA
