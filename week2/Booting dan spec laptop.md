@@ -12,6 +12,7 @@ proses booting komputer adalah proses perjalanan penyalaan komputer awal sampai 
 - Komputer Siap Digunakan: Setelah proses booting selesai dan sistem operasi berhasil dimuat, komputer siap untuk digunakan oleh pengguna. Antarmuka pengguna akan muncul, dan pengguna dapat mulai menjalankan program-program dan tugas-tugas yang diinginkan. 
 
 ## IDENTIFIKASI KOMPUTER ANDA
+![CPU](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/1d9a2b91-c29f-4c22-9892-28b1734fdce1)
 
 ### CPU
 Pada tab CPU terdapat informasi seputar Prosessor, Clocks, Cache dan beberapa informasi lain.
@@ -32,6 +33,7 @@ Pada tab CPU terdapat informasi seputar Prosessor, Clocks, Cache dan beberapa in
 - L1 Data : adalah informasi ukuran cache L1 data yaitu “2 x 24 KBytes”,
 - L1 Inst. : adalah infromasi ukuran cache L1 Iinstruksi yaitu“2 x 32 KBytes”,
 - Level 2 : adalah informasi ukuran cache L2 yaitu “4 MBytes”,
+![Mainboard](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/5d1a11ac-d995-4b8c-9681-f33775f7448e)
 
 ### Mainboard
 Pada tab Mainboard terdapat informasi seputar Motherboard, BIOS, dan Graphic Interface.
@@ -44,6 +46,7 @@ Pada tab Mainboard terdapat informasi seputar Motherboard, BIOS, dan Graphic Int
 - Brand : adalah informasi merek BIOS yaitu “Insyde”,
 - Version : adalah informasi versi BIOS Yaitu “F .58”,
 - Date : adalah informasi tanggal produksi BIOS yaitu “06/12/2020”,
+![Memory](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/290d72f4-7a5b-4605-9950-71d20b28beae)
 
 ### MEMORY
 Pada tab Memory terdapat informasi general memori dan timings.
@@ -53,9 +56,9 @@ Pada tab Memory terdapat informasi general memori dan timings.
 #### Timings
 - DRAM Frequency : adalah informasi clock speed memori yaitu “1188.9 MHz”,
 - FBS:DRAM : adalah informasi rasio antara FBS dan DRAM clock speed yaitu “1:12”,
+![SPD](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/e148c22e-56bc-46fb-9583-ed788ed212bc)
 
 ### SPD
-
 Pada tab SPD terdapat informasi memory slot selection timings table.
 #### Memory Slot Selection
 - Memory Slot : adalah informasi yang menunjukan memori yang terpasang pada komputer, hanya ada satu memori yang terpasang,
@@ -75,6 +78,7 @@ adalah waktu yang diperlukan untuk membuka sebuah kolom memori tertentu,
 - RAS# Precharge : adalah informasi tentang waktu yang dibutuhkan untuk menutup baris memori,
 - tRAS : adalah informasi waktu yang diperlukan untuk membaca data dari baris memori,
 - tRC : adalah informasi waktu yang diperlukan untuk membaca data dari kolom memori
+![Graphics](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/4152cd9c-f897-423e-b0e1-c37d706ce140)
 
 ### Grapics
 Pada tab Grapics terdapat informasi GPU, Clocks, dan Memory.
