@@ -1,3 +1,4 @@
+### Tugas
 1.	Apa hubungan antara perangkat lunak aplikasi dan sistem operasi?
 2.	Apa yang dimaksud dengan sistem operasi? Apakah itu perangkat keras atau perangkat lunak?
 3.	Sebutkan fungsi utama suatu sistem operasi!
