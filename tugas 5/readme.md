@@ -35,8 +35,9 @@ proses1 dan proses2.
     $ ps
     ```
     ![p11](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/e52b6806-8410-4712-9593-9320b408ce2c)
+<br> Keterangan : Perintah $ ps digunakan untuk untuk menampilkan informasi tentang proses yang sedang aktif di dalam sistem.
 
-2. Output ke layar (standar output), input dari keyboard (standard input)
+3. Output ke layar (standar output), input dari keyboard (standard input)
    ```
     $ cat
     hallo, apa khabar
@@ -46,13 +47,15 @@ proses1 dan proses2.
     [Ctrl-d]
    ```
     ![p12](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/f2568506-67b7-41ed-b212-c4886d05d1ac)
+   <br> Keterangan : Perintah cat digunakan untuk untuk menampilkan informasi tentang proses yang sedang aktif di dalam sistem.
 
-3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
+5. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
    ```
    $ mkdir mydir
    $ mkdir mydir **(Terdapat pesan error)**
    ```
     ![p13](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/37dd3a4f-7b44-4464-bde8-b81e57ef335d)
+<br> Keterangan : Perintah mkdir perintah yang digunakan untuk membuat direktori baru di dalam filesystem.
 
 ## Percobaan 2 : Pembelokan (redirection)
 1. Pembelokan standar output
@@ -61,23 +64,26 @@ proses1 dan proses2.
     Ini adalah teks yang saya simpan ke file myfile.txt
    ```
    ![Screenshot (472)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/8c7da49e-f07a-48e5-9508-bcd3d12751b2)
+<br> Keterangan : Perintah “cat 1> myfile.txt” digunakan untuk meng-input‐kan dengan keyboard dan tanda "1>" merupakan pengganti dari standard output.
 
-2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
+3. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
    ```
     $ cat 0< myfile.txt
     $ cat myfile.txt
    ```
    ![Screenshot (473)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/8806e7a6-93d8-4871-b669-ccece05a8885)
+<br> Keterangan : Perintah “cat 0< myfile.txt” ini digunakan untuk file input dibelokkan dari keyboard dari file sehingga antara “cat 0< myfile.txt” dan “cat myfile.txt” memiliki keterkaitan.
 
-3. Pembelokan standar error untuk disimpan di file
+5. Pembelokan standar error untuk disimpan di file
    ```
     $ mkdir mydir (Terdapat pesan error)
     $ mkdir mydir 2> myerror.txt
     $ cat myerror.txt
    ```
    ![Screenshot (474)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/d01f6083-878d-4eea-9756-f0cdf66e97f4)
+<br> Perintah “mkdir mydir” digunakan untuk membuat folder dengan nama mydir tetapi muncul pesan error, karena sudah dibuat sebelumnya. Selanjutnya, pada perintah “mkdir mydir 2> myerror.txt” digunakan untuk membelokkan (memindahkan) pesan error sebelumnya ke dalam file myerror.txt. Tanda "2>" menandakan bahwa output standard error. Selanjutnya, pada perintah “cat myerror.txt” digunakan untuk memunculkan teks yang terdapat dalam file myerror.txt berupa pesan error yang telah dibelokkan sebelumnya.
 
-4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
+7. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
    ```
     $ ls filebaru (Terdapat pesan error)
     $ ls filebaru 2> out.txt
@@ -86,16 +92,18 @@ proses1 dan proses2.
     $ cat out.txt
    ```
    ![Screenshot (475)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/cc705676-33e1-4638-bbe6-076d2ca35a7e)
+<br> Pembelokan standard error (2>) adalah identik dengan file descriptor 1. Perintah “ls filebaru” digunakan untuk menampilkan isi dari folder atau direktori dari filebaru. Tetapi, muncul pesan error karena direktori filebaru tidak ada. Kemudian, perintah “ls filebaru 2> out.txt” digunakan untuk memindahkan pesan error tersebut ke dalam file out.txt melalui standard error yang ditandai dengan "2>". Kemudian, perintah “ls filebaru 2 > out.txt 2>&1” mempunyai fungsi yang sama dengan perintah “cat out.txt.”.
 
-5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
+9. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
    ```
    $ echo “mencoba menulis file” 1> baru
    $ cat filebaru 2> baru 1>&
    $ cat baru
    ```
    ![Screenshot (476)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/be338c90-9e8c-4bf0-a708-8e99688d8810)
+   <br> Perintah echo "mencoba menulis file" >1 baru digunakan untuk menulis kata "mencoba menulis file" yang kemudian dibelokkan ke filebaru yang ditandai dengan tanda "1>". Selanjutnya, pada perintah “cat filebaru 2> baru 1>&2” digunakan untuk membelokkan tampilan filebaru ke standard output yang ditandai dengan tanda "1>&2" yang berarti sama dengan descriptor 2 yaitu standard error.
 
-6. Notasi >> (append)
+10. Notasi >> (append)
    ```
    $ echo “kata pertama” > surat
    $ echo “kata kedua” >> surat
@@ -105,8 +113,9 @@ proses1 dan proses2.
    $ cat surat
    ```
    ![Screenshot (477)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/017cd74b-4f6c-4301-865f-852937a5a856)
+   <br> Perintah echo "kata pertama" > surat digunakan untuk menulis kalimat "kata pertama" ke dalam file surat. Selanjutnya, pada perintah echo "kata kedua" >> surat digunakan untuk menulis "kata kedua" ke dalam file surat tanpa menghapus teks sebelumnya yang ditandai dengan ">>". Selanjutnya, pada perintah echo "kata ketiga" >> surat digunakan untuk menulis kalimat "kata ketiga" ke dalam file surat tanpa menghapus teks sebelumnya. Kemudian, teks tersebut ditampilkan dengan perintah cat surat. Selanjutnya, perintah echo "kata keempat" > surat digunakan untuk menulis "kata keempat" dengan menghapus teks sebelumnya yang ditandai dengan tanda ">". Kemudian perintah cat surat digunakan untuk menampilkan isi file surat.
 
-7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
+11. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
    ```
    $ cat <<++
    Hallo, apa kabar?
@@ -120,13 +129,14 @@ proses1 dan proses2.
    %%%
    ```
    ![Screenshot (478)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/965e467a-8cce-42c7-83b3-401ce49bb6c0)
+<br> Tanda ++ ... ++ digunakan sebagai pembatas input dari keyboard. Tanda tersebut bisa diganti oleh tanda apa saja asalkan pada awal dan akhirnya sama. Pada saat mengetikkan perintah “cat << ++” kemudian mengetikkan kalimat, setelah enter ternyata bisa memasukkan beberapa kalimat lagi. Tetapi, saat menuliskan kalimat ++, sistem menghentikan proses kemudian menampilkannya.
 
-8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
+11. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
   ```
   $ cat myfile.txt – surat
   ```
   ![Screenshot (479)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/09f7b3bb-7dde-4769-a5eb-60e4b082fbc2)
-
+<br> Tanda "‐" (input dari keyboard) adalah representan input dari keyboard. Artinya, menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Tanda "‐" menyatakan bahwa menyelipkan input dari keyboard. Pada terminal ini, akan menampilkan isi file dari "myfile.txt" sekaligus menampilkan file "surat".
 
 ## Percobaan 3 : Pipa (pipeline)
 
@@ -143,6 +153,7 @@ proses1 dan proses2.
    ```
    ![Screenshot (481)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/8153f443-7032-46b1-88ea-8b3c916ca06e)
    ![Screenshot (483)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/d243435f-49c9-4316-a57f-3fa7486e9cea)
+   <br> Pipeline memungkinkan user untuk menggabungkan beberapa perintah secara efisien, dengan output dari satu perintah menjadi input untuk perintah berikutnya. Hal ini sangat berguna untuk memproses dan menganalisis data secara langsung tanpa perlu menyimpannya dalam file sementara.
 
 2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
@@ -151,6 +162,7 @@ proses1 dan proses2.
    $ cat output
    ```
    ![Screenshot (484)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/91e270bf-bc54-4e5d-9593-b512d9e68cf8)
+   <br> Perintah “echo hello” digunakan untuk menampilkan teks "hello" seketika itu juga. Selanjutnya, perintah “echo hello > output” digunakan untuk membelokkan kata "hello" ke file output. Selanjutnya, perintah “cat output” digunakan untuk menampilkan isi dari file output.
 
 3. Untuk menambahkan output ke file digunakan operator ">>"
    ```
@@ -158,12 +170,14 @@ proses1 dan proses2.
    $ cat output
    ```
     ![Screenshot (485)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/2a522f3d-c5c0-4442-9cfe-2166efd80ac4)
-   
+      <br> Perintah “echo bye >> output” digunakan untuk menambahkan teks "bye" ke dalam file output yang ditandai dengan ">>". Setelah itu, perimtah “cat output” digunakan untuk menampilkan isi dari file output.
+
 5. Untuk membelokkan standart input digunakan operator "<"
    ```
    $ cat < output
    ```
    ![Screenshot (486)](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/56292239-6dbc-408e-b537-243dbd1852cb)
+   <br> Perintah “cat < output > out” dan “cat out” merupakan perintah yang dikombinasikan untuk membelokkan standard output dari file output menjadi standard input untuk file out sehingga hasil standard output‐nya sama. Selanjutnya, perintah “cat < output >> out” digunakan untuk membelokkan standard output dari file output menjadi penambahan output ke file yang bernama out. Sehingga, output dari file out akan ditambahkan dengan output dari file output. Selanjutnya, perintah “cat output >> out”, “cat out”, “cat < output > output”, “cat output”, “cat < out >> out” tidak diperkenankan karena menggunakan nama file yang sama. Maka, akan muncul tulisan terus menerus hingga menekan tombol CTRL+c
 
 6. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
    ```
@@ -205,8 +219,7 @@ proses1 dan proses2.
    ```
    ![p41](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/e2599eb1-e4df-4b35-86f1-9ae65627d439)
    ![p42](https://github.com/r4mmar/Sys0P24-3123521004/assets/160557580/f2ef1fdb-e277-49f8-a1df-8caae7e4953c)
-
-
+   <br> $ cat > kelas1.txt: Perintah ini membuka editor untuk membuat atau mengedit file bernama kelas1.txt
 
 ## LATIHAN:
 
