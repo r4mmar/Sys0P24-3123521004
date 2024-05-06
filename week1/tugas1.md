@@ -41,7 +41,7 @@ Loading dan execution: memuat dan memulai program kemudian menjalankan program t
 
 7	Pada tahun 1945, John von Neumann mempresentasikan konsep program tersimpan dalam sebuah laporan yang diterbitkan pada tahun 1945 yang berjudul "First Draft of a Report on the EDVAC" ("Naskah Pertama Laporan tentang EDVAC")
 	
-8	- KEKURANGAN KOMPUTER GENERASI PERTAMA.
+8 KEKURANGAN KOMPUTER GENERASI PERTAMA.
 		- Berukuran sangat besar  
 		- Konsumsi listrik besar
 		- Cepat panas 
@@ -52,7 +52,7 @@ Loading dan execution: memuat dan memulai program kemudian menjalankan program t
 		- lebih banyak di gunakan untuk bisnis 
 		- hanya di miliki kalangan yang terbatas 
 	
-	-KEKURANGAN KONPUTER GENERAASI KE-2
+KEKURANGAN KONPUTER GENERAASI KE-2
 		- ukuran dan berat 
 		- konsumsi daya tinggi
 		- perawatan yang rumit
