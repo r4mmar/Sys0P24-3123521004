@@ -1,4 +1,5 @@
 ## BOOTING PROSESS
+![Nama Alternatif](https://github.com/r4mmar/Sys0P24-3123521004/blob/main/tugas%202/assets/Operating%20System.jpg)
 
 proses booting komputer adalah proses perjalanan penyalaan komputer awal sampai pengambilalihan sistem operasi secara penuh terhadap perangkat. Bisa juga diartikan sebagai proses pemasukan arus listrik kedalam peralatan komputer sehingga komputer dapat berkomunikasi dengan pengguna.
 
